@@ -2,79 +2,246 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Portfolio Alejandro Arcos</title>
-  <link rel="stylesheet" href="cssPortfolio.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!--Bootstrap font awesome-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  <!--Materialize Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <script src="script.js"></script>
+
+
 </head>
 <body>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->    <!-- In case I would want to use normalize -->
+  <link rel="stylesheet" href="cssPortfolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h1>Hi, I'm Alejandro. I design web applications</h1>
-  <a href="https://github.com/alearcos123">
-    <img src="Web.png" alt="">
-  </a>
+  <head>
+
+    <!--Materialize NavBar & SideBar-->
+    <nav class="indigo accent-4">
+      <div class="nav-wrapper z-depth-5">
+        <span class="brand-logo">Welcome</span>
+        <!-- <ul class="left hide-on-med-and-down"> If I want to implement wome options that hide when size change
+          <li><a href="">Home</a></li>
+        </ul> -->
+
+        <!-- Side navbar -->
+        <ul id="slide-out" class="side-nav">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="4.jpg" style="width:360px;height:200px";>
+            </div>
+            <a href="#!user"><img class="circle" src="small.jpg" style="width:110px;height:120px";></a> <br>
+            <a href="#!name"><span class="black-text name">Alejandro Arcos</span></a>
+            <a href="#!email"><span class="black-text email">alejandroarcos2015@gmail.com</span></a>
+          </div></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect black-text" href="#about"><i class="material-icons blue-text">description</i>About me</a></li>
+          <li><a class="waves-effect black-text" href="#contact"><i class="material-icons blue-text">contacts</i>Contact me</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>             </div>
+      </nav>
+
+    </head>
+
+
+     <!--Home section Title and carousel item -->
+    <div class="title bg-light">
+      <div class="dynamic-title cd-headline clip is-full-width">
+        <span>Hi, I'm Alejandro. I develop</span>
+        <span class="cd-words-wrapper">
+          <b class="is-visible">&nbsp;<span class="gold-title text-primary">web applications.</span></b>
+          <b>&nbsp;<span class="gold-title text-info">user interfaces.</span></b>
+        </span>
+      </div>
+      <!--Materialize Carousel-->
+      <div  class="carousel" style="margin-bottom: 100px; ">
+        <a class="carousel-item" href="#one!"><img src="1.jpg" style="width: 450px; height: 300px;"></a>
+        <a class="carousel-item" href="#two!"><img src="Web.png" style="width: 450px; height: 300px;"></a>
+        <a class="carousel-item" href="#three!"><img src="keyboard2.jpg" style="width: 450px; height: 300px;"></a>
+        <a class="carousel-item" href="#four!"><img src="finish.jpg" style="width: 450px; height: 300px;"></a>
+      </div>
+      <br>
+
+    </div>
+
+    <!--arrow link to go down-->
+    <div class="page-scroll learn-more">
+      <a href="#about"><i class="fa fa-chevron-down"></i></a>
+    </div>
+     <!--End of Home section-->
 
 
 
-  <h2><a href="#" class="" >Welcome to my profile </a> </h2>
 
-  <center>
-    <img src="Photo_profile.jpg" alt="">
-  </center>
+    <!-- Bootstrap Grid -->
+    <main role="main">
 
-  <a name="AboutMe"> <h2>About me</h2> </a>
-  <h2>Technical Skills:</h2>
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div class="container z-depth-5">
+
+        <hr class="divider">
+
+        <div class="row featurette" id="about" >
+          <div class="col-md-6 order-md-2">
+            <h2 class="featurette-heading About">Alejandro Arcos<span class="text-muted"> - Web Developer</span></h2>
+            <p class="lead">After graduating in 2015 as Electronic Engineer, I worked two years in this field. The last year I began to study some programming languages with the purpose of becoming a web developer. As a student of Wyncode, I have acquired several technical skills building full-scale web applications. I have worked in a group of projects providing Web Design (Photoshop, Illustrator) and Development (HTML, CSS, jQuery, JavaScript, Bootstrap, Ruby on Rails, SQL). Now, I’m available to work as a web developer.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto img-thumbnail" data-src="holder.js/500x500/auto" alt="500x500" src="Photo_profile.jpg" data-holder-rendered="true" style="width: 400px; height: 420px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette bg-light">
+          <div class="col-md-6 order-md-1">
+            <h2 class="featurette-heading">Let,s make<span class="text-muted"> something special.</span></h2>
+            <p class="lead">I have serious passions for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+            <img class="featurette-image img-fluid mx-auto img-thumbnail" data-src="holder.js/500x500/auto" alt="500x500" style="width: 300px; height: 220px;" src="3.jpg" data-holder-rendered="true">
+          </div>
+          <div class="col-md-5 order-md-2">
+            <ul>
+              <div class="fa-3x col">
+                <i class="fa fa-magic fa-spin" data-fa-transform="shrink-8" style="color: blue;"></i>
+                 Ideas
+                <p class="lead">Providing usability, accessibility and pleasure is where the majority of amazing user experiences start.</p>
+              </div>
+              <div class="fa-3x col">
+                <i class="fa fa-cog fa-spin" data-fa-transform="shrink-8" style="color: blue;"></i>
+                 UI/UX
+                <p class="lead">Make the user's interaction as time efficient and simple as possible.</p>
+              </div>
+
+              <div class="fa-3x col">
+                <i class="fa fa-code fa-spin" data-fa-transform="shrink-8" style="color: blue;"></i>
+                 Code
+                <p class="lead">I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!--Contact section-->
+        <div class="container contact">
+          <h4>Contact</h4>
+          <form style="padding-top:20px;" id="contact">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+
+            <div class="form-group" style="padding-top:20px;">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group" style="padding-top:20px;">
+              <label for="exampleFormControlTextarea1">Leave a message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+            <div class="form-group" style="padding-top:20px;">
+              <label for="exampleFormControlTextarea1">Choose a file</label>
+              <div class="custom-file">
+                <label class="custom-file-label" for="inputGroupFile03">click here</label>
+                <input type="file" class="custom-file-input" id="inputGroupFile03">
+              </div>
+            </div>
+
+
+            <div class="form-check" id="chooseFile" style="padding-top:20px; padding-bottom:20px">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" style="align: center;">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary indigo accent-4">Submit</button>
+          </form>
+
+        </div>
+
+
+        <hr class="featurette-divider ">
+
+      </div><!-- /.container -->
+
+    </main>
+
+    <footer class="bg-light"  style="padding-top:50px; padding-bottom:50px;">
+
+      <p>Email: alejandroarcos2015@gmail.com</p>
+      <p>Phone: 3059858112</p>
 
 
 
-
-  <h2>Education:</h2>
-  <div>Bachelor of Science in Telecommunication and Electronic Engineering <br/> José Antonio Echeverría Higher Polytechnic Institute | Sep 2010 - Jun 2015</div>
-
-
-  <h2>My experience</h2>
-  <p>Barfield - Aero, USA<br/>
-    Electronic Engineer | July 2016 - Current</p>
-
-
-    <p>SITRANS, Cuba<br/>
-      Computer Service Technician | Sep 2014 - Jul 2015</p>
-
-      <h2>Personal Strengths:</h2>
       <ul>
-        <div>Quick learner, versatile and responsible.</div>
-        <div>Possesses excellent communication skills and works well in teams environments.</div>
-        <div>Able to work under stress and with high levels of responsibility.</div>
-        <div>Strong work ethic and discretion about work themes.</div>
-        <div>Highly self‐motivated and very willing to study and implement new technologies.</div>
+        <span>
+          <a href="https://twitter.com/alearcos123">
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color:#0577b6"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/alearcos123">
+            <i class="fa fa-github-square fa-2x" aria-hidden="true" style="color:rgb(31, 37, 42)"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/alejandro-arcos-3b6868b4/">
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color:#0577b6"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.facebook.com/alejandro.arcos.520">
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color:#395899;"></i>
+          </a>
+        </span>
       </ul>
 
+      <div id="BackToTop">
+        <a href="#TOP" style="text-align:right;">
+          "BACK TO TOP"
+          <span>↑</span>
+        </a>
+      </div>
+
+      <p>Copyright (c) 2018 mysite.com All rights reserved</p>
+
+    </footer>
+
+  </body>
 
 
-      <h2>Alejandro Arcos</h1>
-        <h3>Phone: 3059858112</h3>
-        <h3>Email: alejandroarcos2015@gmail.com</h3>
-
-
-
-        <footer>
-
-          <div id="footer">
-            <a href="https://twitter.com/alearcos123">
-              <i class=""> <img id="Social-Links" src="Twitter.png" alt="Twitter Logo">  </i>
-            </a>
-            <a href="https://github.com/alearcos123">
-              <i class=""><img id="Social-Links" src="Github.png" alt="Twitter Logo"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alejandro-arcos-3b6868b4/">
-              <i class=""><img id="Social-Links" src="Linkedin.png" alt="Twitter Logo"></i>
-            </a>
-            <a href="https://www.facebook.com/alejandro.arcos.520">
-              <i class=""><img id="Social-Links" src="Facebook.png" alt="Twitter Logo"></i>
-            </a>
-            <p>Copyright (c) 2018 mysite.com All rights reserved</p>
-
-          </div>
-
-        </footer>
-
-      </body>
-      </html>
+  </html>
